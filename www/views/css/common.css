@@ -1,0 +1,26 @@
+.button--backButton{
+    background: none;
+    color: #006896;
+    height: 100%;
+}
+.button--backButton:active {
+     background-color: white;
+}
+.button--backButton > b{
+    font-weight: bolder;
+    font-size: 100%;
+}
+
+@media screen and (max-width: 380px) and (max-height: 670px) { 
+    /* ヘッダー領域 */
+    header#header{
+        height: 8%;
+    }
+}
+
+@media screen and (max-width: 670px) and (max-height: 380px) {
+    /* ヘッダー領域 */
+    header#header{
+        height: calc(8% * 1.77);
+    }
+}

@@ -1,0 +1,71 @@
+
+<!-- メニュー画面 -->  
+<ons-page modifier="menu" id="menu">
+
+        
+    <!-- ヘッダー領域 -->
+    <header id="menuHeader">
+        <label class="menuTitle">タイトル</label>
+    </header>
+    
+    
+    <!-- コンテンツ領域 -->
+    <section id="menuContentsArea">
+        
+    </section>
+    
+    
+    <!-- ライブラリー選択ボタン領域 -->
+    <section id="libraryButtonArea" ng-controller="LibraryButtonCtrl as libbtn">
+    
+        <!-- エリア1 -->
+        <section class="menuLibraryButtonArea1">
+            <!-- 見出し -->
+            <div class="menuLibraryHeadline">
+                見出し1
+            </div>
+            
+            <!-- ボタン -->
+            <ons-row class="menuLibraryButton">
+                <ons-col>
+                    <ons-button modifier="menuLibBtn" ng-click="libbtn.menuTransition('L001')"><img src="views/img/menu/menu_library-button_library-a.png" alt="" /><br>Library A</ons-button>
+                </ons-col>
+                <ons-col>
+                    <ons-button modifier="menuLibBtn" ng-click="libbtn.menuTransition('L002')"><img src="views/img/menu/menu_library-button_library-b.png" alt="" /><br>Library B</ons-button>
+                </ons-col>
+                <ons-col>
+                    <ons-button modifier="menuLibBtn" ng-click="libbtn.menuTransition('L003')"><img src="views/img/menu/menu_library-button_library-c.png" alt="" /><br>Library C</ons-button>
+                </ons-col>
+                <ons-col>
+                    <ons-button modifier="menuLibBtn" ng-click="libbtn.menuTransition('L004')"><img src="views/img/menu/menu_library-button_library-d.png" alt="" /><br>Library D</ons-button>
+                </ons-col>
+            </ons-row>       
+        </section>
+        
+        <!-- エリア2 -->
+        <section class="menuLibraryButtonArea2">
+            <!-- 見出し -->
+            <div class="menuLibraryHeadline">
+                見出し2
+            </div>
+            
+            <!-- ボタン -->
+            <ons-row class="menuLibraryButton">
+                <ons-col>
+                    <ons-button modifier="menuLibBtn" ng-click="libbtn.menuTransition('L005')"><img src="views/img/menu/menu_library-button_library-e.png" alt="" /><br>Library E</ons-button>
+                </ons-col>
+                <ons-col>
+                    <ons-button modifier="menuLibBtn" ng-click="libbtn.menuTransition('L006')"><img src="views/img/menu/menu_library-button_library-f.png" alt="" /><br>Library F</ons-button>
+                </ons-col>
+                <ons-col>
+                    <ons-button modifier="menuLibBtn" ng-click="libbtn.menuTransition('L007')"><img src="views/img/menu/menu_library-button_library-g.png" alt="" /><br>Library G</ons-button>
+                </ons-col>
+                <ons-col>
+                    <ons-button modifier="menuLibBtn" ng-click="libbtn.menuTransition('L008')"><img src="views/img/menu/menu_library-button_library-h.png" alt="" /><br>Library H</ons-button>
+                </ons-col>
+            </ons-row>
+            
+        </section>
+    </section>
+    
+</ons-page>

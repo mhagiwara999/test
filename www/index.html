@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data:; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="components/loader.js"></script>
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="lib/onsenui/js/onsenui.min.js"></script>
+    <script src="lib/onsenui/js/angular-onsenui.min.js"></script>
+    
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
+    <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
+    
+    
+    <!-- jsファイルの読み込み -->
+    <script src="app.module.js"></script>
+
+    <script src="controllers/menu.controller.js"></script>
+    <script src="controllers/library.controller.js"></script>
+    <script src="controllers/contents.controller.js"></script>
+    <script src="controllers/movie.contents.controller.js"></script>
+    
+    <script src="services/transition.service.js"></script>
+    <script src="services/librarydata.acquisition.service.js"></script>
+    <script src="services/connection.service.js"></script>
+    
+    <script src="directives/repeatfinished.directive.js"></script>
+    
+    <!-- エラー確認用に作成したサービス -->
+    <script src="services/library.error.librarydata.acquisition.service.js"></script>
+    <script src="services/contents.error.librarydata.acquisition.service.js"></script>
+    
+    
+    <!-- cssファイルの読み込み -->
+    <link rel="stylesheet" href="views/css/common.css">
+    <link rel="stylesheet" href="views/css/menu.css">
+    <link rel="stylesheet" href="views/css/library.css">
+    <link rel="stylesheet" href="views/css/contents.css">
+
+</head>
+<body>
+    <!-- ナビゲーションの定義 -->
+    <ons-navigator
+      var="navi"
+      page="views/html/menu.html">
+    </ons-navigator>  
+    
+</body>
+</html>
